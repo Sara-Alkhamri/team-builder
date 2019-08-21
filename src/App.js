@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import data from './data';
+import Form from './Components/Form';
+import TeamList from './Components/TeamList';
 
 import './App.css';
 
@@ -14,7 +16,7 @@ function App() {
     <div>
       <h1>Team</h1>
       <TeamList team={memebers} />
-      <From addNewMemeber={addNewMemeber}/>
+      <Form addNewMemeber={addNewMemeber}/>
       
     </div>
   );
