@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import data from './data';
 
 import './App.css';
 
 function App() {
 
-  const [memebers, setMemebers] = useState();
+  const [memebers, setMemebers] = useState(data);
 
   const addNewMemeber = memeber => {
     setMemebers([...memebers, memeber])
