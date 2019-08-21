@@ -7,16 +7,16 @@ import './App.css';
 
 function App() {
 
-  const [memebers, setMemebers] = useState(data);
+  const [members, setMembers] = useState(data);
 
-  const addNewMemeber = memeber => {
-    setMemebers([...memebers, memeber])
+  const addNewMember = member => {
+    setMembers([...members, member])
   }
   return (
     <div>
       <h1>Team</h1>
-      <TeamList team={memebers} />
-      <Form addNewMemeber={addNewMemeber}/>
+      <TeamList team={members} />
+      <Form addNewMember={addNewMember}/>
       
     </div>
   );
