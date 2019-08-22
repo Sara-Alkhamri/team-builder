@@ -13,8 +13,8 @@ function App() {
     setMembers([...members, member])
   }
   return (
-    <div>
-      <h1>Team</h1>
+    <div className="App">
+      <h1>Our Team</h1>
       <TeamList team={members} />
       <Form addNewMember={addNewMember}/>
       
